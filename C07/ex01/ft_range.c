@@ -6,7 +6,7 @@
 /*   By: saichaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 14:27:52 by saichaou          #+#    #+#             */
-/*   Updated: 2022/07/16 14:34:39 by saichaou         ###   ########.fr       */
+/*   Updated: 2022/07/21 16:06:09 by saichaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,5 @@
 
 int	*ft_range(int min, int max)
 {
-	int	*range;
-	int	len;
-	if (min >= max)
-	{
-		return range;
-	}
+
 }
