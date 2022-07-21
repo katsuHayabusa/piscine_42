@@ -6,7 +6,7 @@
 /*   By: saichaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 15:10:27 by saichaou          #+#    #+#             */
-/*   Updated: 2022/07/17 12:22:16 by saichaou         ###   ########.fr       */
+/*   Updated: 2022/07/21 17:58:56 by saichaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,9 @@ void	ft_putchar(char c)
 
 int	is_goodchar(char c)
 {
-	if (c == '-')
-		return (0);
-	if (c == '+')
-		return (0);
-	if (c >= '0' && c <= '9')
-		return (0);
-	return (1);
+	if (c == ' ' || (c >= 9 && c <= 13))
+		return (1);
+	return (0);
 }
 
 int	ft_atoi(char *str)

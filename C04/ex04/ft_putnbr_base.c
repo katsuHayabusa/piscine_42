@@ -6,7 +6,7 @@
 /*   By: saichaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 13:27:29 by saichaou          #+#    #+#             */
-/*   Updated: 2022/07/21 15:57:11 by saichaou         ###   ########.fr       */
+/*   Updated: 2022/07/21 17:13:30 by saichaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ int	is_valid_base(char *base)
 
 void	ft_putnbr_base(int nbr, char *base)
 {
-	unsigned int	res;
 	if (!is_valid_base(base))
 		return;
 	if (nbr < 0)
