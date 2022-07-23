@@ -6,7 +6,7 @@
 /*   By: saichaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 15:24:46 by saichaou          #+#    #+#             */
-/*   Updated: 2022/07/18 15:43:57 by saichaou         ###   ########.fr       */
+/*   Updated: 2022/07/23 15:10:27 by saichaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,5 @@ int	ft_iterative_power(int nb, int power)
 		res *= nb;
 		i++;
 	}
-	return res;
-}
-
-int main(void)
-{
-	int i = 5;
-	printf("%d", ft_iterative_power(i, 2));
+	return (res);
 }

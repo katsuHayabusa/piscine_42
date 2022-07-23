@@ -6,7 +6,7 @@
 /*   By: saichaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 15:47:18 by saichaou          #+#    #+#             */
-/*   Updated: 2022/07/18 16:08:44 by saichaou         ###   ########.fr       */
+/*   Updated: 2022/07/23 15:13:32 by saichaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ int	ft_recursive_power(int nb, int power)
 		return (0);
 	i = 0;
 	if (power == 0)
-		return (1); 
+		return (1);
 	return (nb * ft_recursive_power(nb, power - 1));
 }
