@@ -6,7 +6,7 @@
 /*   By: saichaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 14:17:21 by saichaou          #+#    #+#             */
-/*   Updated: 2022/07/17 15:15:50 by saichaou         ###   ########.fr       */
+/*   Updated: 2022/07/23 15:58:32 by saichaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,12 @@ int	ft_iterative_factorial(int nb)
 
 	i = 1;
 	res = 1;
-	if (nb <= 1)
-		return (1);
+	if (nb < 0)
+		return (0);
 	while (i <= nb)
 	{
 		res *= i;
 		i++;
 	}
 	return (res);
+}
