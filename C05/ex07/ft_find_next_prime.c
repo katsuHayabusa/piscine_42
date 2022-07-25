@@ -6,7 +6,7 @@
 /*   By: saichaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:24:17 by saichaou          #+#    #+#             */
-/*   Updated: 2022/07/23 15:13:12 by saichaou         ###   ########.fr       */
+/*   Updated: 2022/07/25 11:34:57 by saichaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_is_prime(int nb)
 	if (nb <= 1)
 		return (0);
 	i = 2;
-	while (i < nb)
+	while (i <= nb / i)
 	{
 		if (nb % i == 0)
 			return (0);

@@ -6,7 +6,7 @@
 /*   By: saichaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 11:09:55 by saichaou          #+#    #+#             */
-/*   Updated: 2022/07/15 11:16:59 by saichaou         ###   ########.fr       */
+/*   Updated: 2022/07/25 16:21:55 by saichaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,7 @@ void	ft_putstr(char *c)
 
 int	main(int argc, char **argv)
 {
-	int	i;
-
-	i = 0;
+	(void) argc;
 	ft_putstr(argv[0]);
 	ft_putchar('\n');
 	return (0);

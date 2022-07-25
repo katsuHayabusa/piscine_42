@@ -6,7 +6,7 @@
 /*   By: saichaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 11:53:25 by saichaou          #+#    #+#             */
-/*   Updated: 2022/07/21 12:18:28 by saichaou         ###   ########.fr       */
+/*   Updated: 2022/07/25 16:44:27 by saichaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,21 +29,21 @@ void	ft_putstr(char *str)
 	}
 }
 
-int     ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
-        int     i;
+	int	i;
 
-        i = 0;
-        while (s1[i] == s2[i] && s1[i])
-                i++;
-        return (s1[i] - s2[i]);
+	i = 0;
+	while (s1[i] == s2[i] && s1[i])
+		i++;
+	return (s1[i] - s2[i]);
 }
 
 void	**sort_params(char **params)
 {
-	int	i;
-	int	j;
 	char	*temp;
+	int		i;
+	int		j;
 
 	i = 1;
 	j = 1;
@@ -52,7 +52,7 @@ void	**sort_params(char **params)
 		j = i + 1;
 		while (params[j])
 		{
-			if (ft_strcmp(params[i],params[j]) > 0)
+			if (ft_strcmp(params[i], params[j]) > 0)
 			{
 				temp = params[i];
 				params[i] = params[j];
@@ -62,12 +62,14 @@ void	**sort_params(char **params)
 		}
 		i++;
 	}
+	return (0);
 }
 
 int	main(int argc, char **argv)
 {
 	int	i;
 
+	(void) argc;
 	i = 1;
 	if (!argv[i])
 		return ('\0');
@@ -78,4 +80,5 @@ int	main(int argc, char **argv)
 		ft_putchar('\n');
 		i++;
 	}
+	return (0);
 }
