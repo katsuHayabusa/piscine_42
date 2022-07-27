@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: saichaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/18 15:47:18 by saichaou          #+#    #+#             */
-/*   Updated: 2022/07/26 13:12:40 by saichaou         ###   ########.fr       */
+/*   Created: 2022/07/26 15:19:27 by saichaou          #+#    #+#             */
+/*   Updated: 2022/07/27 14:28:43 by saichaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
-int	ft_recursive_power(int nb, int power)
-{
-	if (power < 0)
-		return (0);
-	if (power == 0)
-		return (1);
-	return (nb * ft_recursive_power(nb, power - 1));
-}
+# define int VALUE
+# define VALUE Value
+# if Value >= 0
+# define ABS(Value) Value
+# endif
+#else
+# define ABS(Value) (Value * 1)
+#endif
